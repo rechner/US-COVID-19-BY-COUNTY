@@ -215,8 +215,8 @@ info.onAdd = function (map) {
 		var content = '<h4>US COVID-19 BY COUNTY<br/>43,945 confirmed, 8,727 added<br/>Dots as Hospitals</h4>'+ 	'<footer><p>Source:<a href="https://coronavirus.1point3acres.com/">coronavirus.1point3acres.com</a> <br/>Update: March 23 2020, 10 pm EST</p></footer>' +  (props ?
 				'<b>' + props.LOCATION + '<br/>Cases per capita (100k): ' +
                                 '(' + ((props.COMFIRMED_COMFIRMED / props.Pop) * 100000).toFixed(4)  + ')<br/>Confirmed: ' + props.COMFIRMED_COMFIRMED + '<br/>Newly added: ' + props.ADDED
-				+ '</b><footer><br/>Puppy Population: ' + numberWithCommas(props.Pop)
-				+ '<br/>Wat Hospital beds: '+ numberWithCommas(props.HospitalBeds)+'<br/>('+ numberWithCommas(Math.round(props.HospitalBeds/props.COMFIRMED_COMFIRMED)) +' beds per confirmed,'
+				+ '</b><footer><br/>Population: ' + numberWithCommas(props.Pop)
+				+ '<br/>Hospital beds: '+ numberWithCommas(props.HospitalBeds)+'<br/>('+ numberWithCommas(Math.round(props.HospitalBeds/props.COMFIRMED_COMFIRMED)) +' beds per confirmed,'
 				+'<br/>assuming all beds for COVID-19)</footer>'
 				: 'Hover over a county');
 
